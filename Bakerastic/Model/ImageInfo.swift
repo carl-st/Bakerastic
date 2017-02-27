@@ -12,7 +12,7 @@ import RealmSwift
 class Info: Object, Mappable {
     dynamic var id = NSUUID().uuidString
     dynamic var descriptionText: String = ""
-    dynamic var timestamp = ""
+    dynamic var timestamp = NSDate()
     
     override static func primaryKey() -> String? {
         return "id"
@@ -25,6 +25,9 @@ class Info: Object, Mappable {
     func mapping(map: Map) {
         id <- map["_id"]
         descriptionText <- map["description"]
-        timestamp <- map["timestamp"]
+        
+        var stringDate = ""
+        stringDate <- map["timestamp"]
+        timestamp = NSDate(string: stringDate, formatter: .dateTimeWithSeconds)!
     }
 }

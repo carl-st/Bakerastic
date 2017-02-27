@@ -25,6 +25,8 @@
 		F9D4D51D1E64C287005D5AAD /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D51C1E64C287005D5AAD /* ImageInfo.swift */; };
 		F9D4D51F1E64C379005D5AAD /* RemoteContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D51E1E64C379005D5AAD /* RemoteContent.swift */; };
 		F9D4D5211E64C48D005D5AAD /* ListTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5201E64C48D005D5AAD /* ListTransform.swift */; };
+		F9D4D5231E64CC4E005D5AAD /* DateFormatter+Bakerastic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5221E64CC4E005D5AAD /* DateFormatter+Bakerastic.swift */; };
+		F9D4D5251E64CE0C005D5AAD /* NSDate+Bakerastic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5241E64CE0C005D5AAD /* NSDate+Bakerastic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		F9D4D51C1E64C287005D5AAD /* ImageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageInfo.swift; path = Model/ImageInfo.swift; sourceTree = "<group>"; };
 		F9D4D51E1E64C379005D5AAD /* RemoteContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RemoteContent.swift; path = Model/RemoteContent.swift; sourceTree = "<group>"; };
 		F9D4D5201E64C48D005D5AAD /* ListTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTransform.swift; path = Other/ListTransform.swift; sourceTree = "<group>"; };
+		F9D4D5221E64CC4E005D5AAD /* DateFormatter+Bakerastic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateFormatter+Bakerastic.swift"; path = "Other/DateFormatter+Bakerastic.swift"; sourceTree = "<group>"; };
+		F9D4D5241E64CE0C005D5AAD /* NSDate+Bakerastic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+Bakerastic.swift"; path = "Other/NSDate+Bakerastic.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +253,8 @@
 			isa = PBXGroup;
 			children = (
 				F9D4D5141E64BA62005D5AAD /* UIColor+Bakerastic.swift */,
+				F9D4D5221E64CC4E005D5AAD /* DateFormatter+Bakerastic.swift */,
+				F9D4D5241E64CE0C005D5AAD /* NSDate+Bakerastic.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -536,6 +542,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D4D5231E64CC4E005D5AAD /* DateFormatter+Bakerastic.swift in Sources */,
+				F9D4D5251E64CE0C005D5AAD /* NSDate+Bakerastic.swift in Sources */,
 				F9D4D4DD1E64B2AF005D5AAD /* ViewController.swift in Sources */,
 				F9D4D51D1E64C287005D5AAD /* ImageInfo.swift in Sources */,
 				F9D4D4DB1E64B2AF005D5AAD /* AppDelegate.swift in Sources */,
