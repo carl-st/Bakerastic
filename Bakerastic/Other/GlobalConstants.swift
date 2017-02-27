@@ -7,8 +7,10 @@
 //
 
 import UIKit
+
 struct Urls {
-    static var baseUrl = "https://dl.dropboxusercontent.com/u/16049878/images/test.json" // typically it would be just https://dl.dropboxusercontent.com/
+    static var baseUrl = "https://dl.dropboxusercontent.com/u/16049878/images/test.json"
+    // typically it would be just https://dl.dropboxusercontent.com/
 }
 
 struct Colors {
