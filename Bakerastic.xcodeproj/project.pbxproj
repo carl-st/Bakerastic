@@ -50,6 +50,7 @@
 		0A93991AF641774CAF37FA9F /* Pods-Bakerastic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bakerastic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bakerastic/Pods-Bakerastic.release.xcconfig"; sourceTree = "<group>"; };
 		1A74E7B84D970F971B2299FF /* Pods_BakerasticTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BakerasticTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F6AB4E1979EFCA0B544F0EE /* Pods-BakerasticTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BakerasticTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BakerasticTests/Pods-BakerasticTests.release.xcconfig"; sourceTree = "<group>"; };
+		44EB47F1C581A6F5255F99C3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		781A78FEA13746AF76B27F34 /* Pods-BakerasticUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BakerasticUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BakerasticUITests/Pods-BakerasticUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		98A5ADF53CFA6D6D3A672406 /* Pods_Bakerastic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bakerastic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA14E6A19ECD52690A34F6D2 /* Pods-BakerasticUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BakerasticUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BakerasticUITests/Pods-BakerasticUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +142,7 @@
 				F9D4D4D81E64B2AF005D5AAD /* Products */,
 				CFE5752856A56C60E94A6BAD /* Pods */,
 				63993050A96A0871BD89136A /* Frameworks */,
+				44EB47F1C581A6F5255F99C3 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
