@@ -20,6 +20,11 @@
 		F9D4D5111E64B93F005D5AAD /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5101E64B93F005D5AAD /* UIConstants.swift */; };
 		F9D4D5131E64B957005D5AAD /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5121E64B957005D5AAD /* GlobalConstants.swift */; };
 		F9D4D5151E64BA62005D5AAD /* UIColor+Bakerastic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5141E64BA62005D5AAD /* UIColor+Bakerastic.swift */; };
+		F9D4D5191E64BFEA005D5AAD /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5181E64BFEA005D5AAD /* PersistenceManager.swift */; };
+		F9D4D51B1E64C24D005D5AAD /* Kitten.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D51A1E64C24D005D5AAD /* Kitten.swift */; };
+		F9D4D51D1E64C287005D5AAD /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D51C1E64C287005D5AAD /* ImageInfo.swift */; };
+		F9D4D51F1E64C379005D5AAD /* RemoteContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D51E1E64C379005D5AAD /* RemoteContent.swift */; };
+		F9D4D5211E64C48D005D5AAD /* ListTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5201E64C48D005D5AAD /* ListTransform.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		F9D4D5101E64B93F005D5AAD /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIConstants.swift; path = Other/UIConstants.swift; sourceTree = "<group>"; };
 		F9D4D5121E64B957005D5AAD /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalConstants.swift; path = Other/GlobalConstants.swift; sourceTree = "<group>"; };
 		F9D4D5141E64BA62005D5AAD /* UIColor+Bakerastic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Bakerastic.swift"; sourceTree = "<group>"; };
+		F9D4D5181E64BFEA005D5AAD /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersistenceManager.swift; path = Managers/PersistenceManager.swift; sourceTree = "<group>"; };
+		F9D4D51A1E64C24D005D5AAD /* Kitten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Kitten.swift; path = Model/Kitten.swift; sourceTree = "<group>"; };
+		F9D4D51C1E64C287005D5AAD /* ImageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageInfo.swift; path = Model/ImageInfo.swift; sourceTree = "<group>"; };
+		F9D4D51E1E64C379005D5AAD /* RemoteContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RemoteContent.swift; path = Model/RemoteContent.swift; sourceTree = "<group>"; };
+		F9D4D5201E64C48D005D5AAD /* ListTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTransform.swift; path = Other/ListTransform.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +202,9 @@
 		F9D4D50A1E64B705005D5AAD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F9D4D51A1E64C24D005D5AAD /* Kitten.swift */,
+				F9D4D51C1E64C287005D5AAD /* ImageInfo.swift */,
+				F9D4D51E1E64C379005D5AAD /* RemoteContent.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -199,6 +212,7 @@
 		F9D4D50B1E64B71E005D5AAD /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				F9D4D5181E64BFEA005D5AAD /* PersistenceManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -226,6 +240,7 @@
 				F9D4D50F1E64B8CC005D5AAD /* Extensions */,
 				F9D4D5101E64B93F005D5AAD /* UIConstants.swift */,
 				F9D4D5121E64B957005D5AAD /* GlobalConstants.swift */,
+				F9D4D5201E64C48D005D5AAD /* ListTransform.swift */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -522,9 +537,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D4D4DD1E64B2AF005D5AAD /* ViewController.swift in Sources */,
+				F9D4D51D1E64C287005D5AAD /* ImageInfo.swift in Sources */,
 				F9D4D4DB1E64B2AF005D5AAD /* AppDelegate.swift in Sources */,
 				F9D4D5131E64B957005D5AAD /* GlobalConstants.swift in Sources */,
+				F9D4D5191E64BFEA005D5AAD /* PersistenceManager.swift in Sources */,
 				F9D4D5151E64BA62005D5AAD /* UIColor+Bakerastic.swift in Sources */,
+				F9D4D51B1E64C24D005D5AAD /* Kitten.swift in Sources */,
+				F9D4D51F1E64C379005D5AAD /* RemoteContent.swift in Sources */,
+				F9D4D5211E64C48D005D5AAD /* ListTransform.swift in Sources */,
 				F9D4D5111E64B93F005D5AAD /* UIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

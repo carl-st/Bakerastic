@@ -1,0 +1,29 @@
+//
+//  ListTransform.swift
+//  Bakerastic
+//
+//  Created by Karol Stępień on 27.02.2017.
+//  Copyright © 2017 carlst. All rights reserved.
+//
+
+import RealmSwift
+import ObjectMapper
+
+infix operator <-
+
+/// Object of Realm's List type
+public func <- <T: Mappable>(left: List<T>, right: Map) {
+    var array: [T]?
+    
+    if right.mappingType == .toJSON {
+        array = Array(left)
+    }
+    
+    array <- right
+    
+    if right.mappingType == .fromJSON {
+        if let theArray = array {
+            left.append(objectsIn: theArray)
+        }
+    }
+}
