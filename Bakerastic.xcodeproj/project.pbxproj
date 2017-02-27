@@ -17,9 +17,7 @@
 		F9D4D4E51E64B2AF005D5AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D4D4E31E64B2AF005D5AAD /* LaunchScreen.storyboard */; };
 		F9D4D4F01E64B2AF005D5AAD /* BakerasticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D4EF1E64B2AF005D5AAD /* BakerasticTests.swift */; };
 		F9D4D4FB1E64B2AF005D5AAD /* BakerasticUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D4FA1E64B2AF005D5AAD /* BakerasticUITests.swift */; };
-		F9D4D5111E64B93F005D5AAD /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5101E64B93F005D5AAD /* UIConstants.swift */; };
 		F9D4D5131E64B957005D5AAD /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5121E64B957005D5AAD /* GlobalConstants.swift */; };
-		F9D4D5151E64BA62005D5AAD /* UIColor+Bakerastic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5141E64BA62005D5AAD /* UIColor+Bakerastic.swift */; };
 		F9D4D5191E64BFEA005D5AAD /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5181E64BFEA005D5AAD /* PersistenceManager.swift */; };
 		F9D4D51B1E64C24D005D5AAD /* Kitten.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D51A1E64C24D005D5AAD /* Kitten.swift */; };
 		F9D4D51D1E64C287005D5AAD /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D51C1E64C287005D5AAD /* ImageInfo.swift */; };
@@ -27,6 +25,9 @@
 		F9D4D5211E64C48D005D5AAD /* ListTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5201E64C48D005D5AAD /* ListTransform.swift */; };
 		F9D4D5231E64CC4E005D5AAD /* DateFormatter+Bakerastic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5221E64CC4E005D5AAD /* DateFormatter+Bakerastic.swift */; };
 		F9D4D5251E64CE0C005D5AAD /* NSDate+Bakerastic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5241E64CE0C005D5AAD /* NSDate+Bakerastic.swift */; };
+		F9D4D5271E64D080005D5AAD /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5261E64D080005D5AAD /* UIConstants.swift */; };
+		F9D4D5291E64D097005D5AAD /* UIColor+Bakerastic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5281E64D097005D5AAD /* UIColor+Bakerastic.swift */; };
+		F9D4D52C1E64D2FD005D5AAD /* ContentServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D52B1E64D2FD005D5AAD /* ContentServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,9 +70,7 @@
 		F9D4D4F61E64B2AF005D5AAD /* BakerasticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BakerasticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D4D4FA1E64B2AF005D5AAD /* BakerasticUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakerasticUITests.swift; sourceTree = "<group>"; };
 		F9D4D4FC1E64B2AF005D5AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9D4D5101E64B93F005D5AAD /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIConstants.swift; path = Other/UIConstants.swift; sourceTree = "<group>"; };
 		F9D4D5121E64B957005D5AAD /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalConstants.swift; path = Other/GlobalConstants.swift; sourceTree = "<group>"; };
-		F9D4D5141E64BA62005D5AAD /* UIColor+Bakerastic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Bakerastic.swift"; sourceTree = "<group>"; };
 		F9D4D5181E64BFEA005D5AAD /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersistenceManager.swift; path = Managers/PersistenceManager.swift; sourceTree = "<group>"; };
 		F9D4D51A1E64C24D005D5AAD /* Kitten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Kitten.swift; path = Model/Kitten.swift; sourceTree = "<group>"; };
 		F9D4D51C1E64C287005D5AAD /* ImageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageInfo.swift; path = Model/ImageInfo.swift; sourceTree = "<group>"; };
@@ -79,6 +78,9 @@
 		F9D4D5201E64C48D005D5AAD /* ListTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTransform.swift; path = Other/ListTransform.swift; sourceTree = "<group>"; };
 		F9D4D5221E64CC4E005D5AAD /* DateFormatter+Bakerastic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateFormatter+Bakerastic.swift"; path = "Other/DateFormatter+Bakerastic.swift"; sourceTree = "<group>"; };
 		F9D4D5241E64CE0C005D5AAD /* NSDate+Bakerastic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+Bakerastic.swift"; path = "Other/NSDate+Bakerastic.swift"; sourceTree = "<group>"; };
+		F9D4D5261E64D080005D5AAD /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		F9D4D5281E64D097005D5AAD /* UIColor+Bakerastic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Bakerastic.swift"; path = "Other/UIColor+Bakerastic.swift"; sourceTree = "<group>"; };
+		F9D4D52B1E64D2FD005D5AAD /* ContentServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentServices.swift; path = Services/ContentServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				F9D4D50B1E64B71E005D5AAD /* Managers */,
 				F9D4D50A1E64B705005D5AAD /* Model */,
 				F9D4D5091E64B6FD005D5AAD /* ViewModels */,
+				F9D4D52A1E64D292005D5AAD /* Services */,
 				F9D4D5081E64B6F1005D5AAD /* ViewControllers */,
 				F9D4D50D1E64B72E005D5AAD /* Storyboards */,
 				F9D4D50E1E64B750005D5AAD /* Other */,
@@ -242,8 +245,8 @@
 			isa = PBXGroup;
 			children = (
 				F9D4D50F1E64B8CC005D5AAD /* Extensions */,
-				F9D4D5101E64B93F005D5AAD /* UIConstants.swift */,
 				F9D4D5121E64B957005D5AAD /* GlobalConstants.swift */,
+				F9D4D5261E64D080005D5AAD /* UIConstants.swift */,
 				F9D4D5201E64C48D005D5AAD /* ListTransform.swift */,
 			);
 			name = Other;
@@ -252,11 +255,19 @@
 		F9D4D50F1E64B8CC005D5AAD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F9D4D5141E64BA62005D5AAD /* UIColor+Bakerastic.swift */,
+				F9D4D5281E64D097005D5AAD /* UIColor+Bakerastic.swift */,
 				F9D4D5221E64CC4E005D5AAD /* DateFormatter+Bakerastic.swift */,
 				F9D4D5241E64CE0C005D5AAD /* NSDate+Bakerastic.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F9D4D52A1E64D292005D5AAD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F9D4D52B1E64D2FD005D5AAD /* ContentServices.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -542,6 +553,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D4D5291E64D097005D5AAD /* UIColor+Bakerastic.swift in Sources */,
 				F9D4D5231E64CC4E005D5AAD /* DateFormatter+Bakerastic.swift in Sources */,
 				F9D4D5251E64CE0C005D5AAD /* NSDate+Bakerastic.swift in Sources */,
 				F9D4D4DD1E64B2AF005D5AAD /* ViewController.swift in Sources */,
@@ -549,11 +561,11 @@
 				F9D4D4DB1E64B2AF005D5AAD /* AppDelegate.swift in Sources */,
 				F9D4D5131E64B957005D5AAD /* GlobalConstants.swift in Sources */,
 				F9D4D5191E64BFEA005D5AAD /* PersistenceManager.swift in Sources */,
-				F9D4D5151E64BA62005D5AAD /* UIColor+Bakerastic.swift in Sources */,
 				F9D4D51B1E64C24D005D5AAD /* Kitten.swift in Sources */,
 				F9D4D51F1E64C379005D5AAD /* RemoteContent.swift in Sources */,
+				F9D4D52C1E64D2FD005D5AAD /* ContentServices.swift in Sources */,
 				F9D4D5211E64C48D005D5AAD /* ListTransform.swift in Sources */,
-				F9D4D5111E64B93F005D5AAD /* UIConstants.swift in Sources */,
+				F9D4D5271E64D080005D5AAD /* UIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

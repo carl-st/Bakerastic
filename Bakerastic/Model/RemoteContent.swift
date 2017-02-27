@@ -9,7 +9,7 @@
 import ObjectMapper
 import RealmSwift
 
-class ImageInfo: Object, Mappable {
+class RemoteContent: Object, Mappable {
     dynamic var id = 0 // It will be only one
     dynamic var lastUpdate: String = ""
     let images = List<Kitten>()
