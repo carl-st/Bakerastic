@@ -17,6 +17,9 @@
 		F9D4D4E51E64B2AF005D5AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D4D4E31E64B2AF005D5AAD /* LaunchScreen.storyboard */; };
 		F9D4D4F01E64B2AF005D5AAD /* BakerasticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D4EF1E64B2AF005D5AAD /* BakerasticTests.swift */; };
 		F9D4D4FB1E64B2AF005D5AAD /* BakerasticUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D4FA1E64B2AF005D5AAD /* BakerasticUITests.swift */; };
+		F9D4D5111E64B93F005D5AAD /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5101E64B93F005D5AAD /* UIConstants.swift */; };
+		F9D4D5131E64B957005D5AAD /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5121E64B957005D5AAD /* GlobalConstants.swift */; };
+		F9D4D5151E64BA62005D5AAD /* UIColor+Bakerastic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5141E64BA62005D5AAD /* UIColor+Bakerastic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		F9D4D4F61E64B2AF005D5AAD /* BakerasticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BakerasticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D4D4FA1E64B2AF005D5AAD /* BakerasticUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakerasticUITests.swift; sourceTree = "<group>"; };
 		F9D4D4FC1E64B2AF005D5AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9D4D5101E64B93F005D5AAD /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIConstants.swift; path = Other/UIConstants.swift; sourceTree = "<group>"; };
+		F9D4D5121E64B957005D5AAD /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalConstants.swift; path = Other/GlobalConstants.swift; sourceTree = "<group>"; };
+		F9D4D5141E64BA62005D5AAD /* UIColor+Bakerastic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Bakerastic.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,8 +223,19 @@
 		F9D4D50E1E64B750005D5AAD /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				F9D4D50F1E64B8CC005D5AAD /* Extensions */,
+				F9D4D5101E64B93F005D5AAD /* UIConstants.swift */,
+				F9D4D5121E64B957005D5AAD /* GlobalConstants.swift */,
 			);
 			name = Other;
+			sourceTree = "<group>";
+		};
+		F9D4D50F1E64B8CC005D5AAD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F9D4D5141E64BA62005D5AAD /* UIColor+Bakerastic.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +251,7 @@
 				F9D4D4D51E64B2AF005D5AAD /* Resources */,
 				94C55B4A7893107614E2AB13 /* 📦 Embed Pods Frameworks */,
 				D5FE2781E530F10D808A0D52 /* 📦 Copy Pods Resources */,
+				F9D4D5171E64BD9E005D5AAD /* Generate Storyboard Constants */,
 			);
 			buildRules = (
 			);
@@ -482,6 +500,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		F9D4D5171E64BD9E005D5AAD /* Generate Storyboard Constants */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Storyboard Constants";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo $(bash -l -c  \"source ~/.bash_profile && cd Bakerastic && bundle exec sbconstants -w UIConstants.swift\")";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -491,6 +523,9 @@
 			files = (
 				F9D4D4DD1E64B2AF005D5AAD /* ViewController.swift in Sources */,
 				F9D4D4DB1E64B2AF005D5AAD /* AppDelegate.swift in Sources */,
+				F9D4D5131E64B957005D5AAD /* GlobalConstants.swift in Sources */,
+				F9D4D5151E64BA62005D5AAD /* UIColor+Bakerastic.swift in Sources */,
+				F9D4D5111E64B93F005D5AAD /* UIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
