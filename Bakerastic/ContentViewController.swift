@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIGestureRecognizerDelegate  {
 
     var viewModel: ContentViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = Colors.primaryColor
+        
         ContentServices.sharedInstance.getContent(completion: {_, _ -> Void in})
         
         self.viewModel = ContentViewModel(reload: { () -> Void in
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
 
             if let viewModel = self.viewModel {
 
-                for starImage in (viewModel.content.first?.images)! {
+                for kitten in (viewModel.content.first?.images)! {
                     let pointX = CGFloat(UInt(arc4random() %
                             UInt32(UInt(insetSize.width))))
                     let pointY = CGFloat(UInt(arc4random() %
@@ -32,8 +33,8 @@ class ViewController: UIViewController {
                     newView.frame = CGRect(x: pointX, y: pointY, width: 50, height: 50)
                     
                     let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-                    imageView.contentMode = .scaleAspectFit
-                    ContentServices.sharedInstance.getImage(url: URL(string: starImage.imageUrl)!, completion: {
+//                    imageView.contentMode = .scaleAspectFit
+                    ContentServices.sharedInstance.getImage(url: URL(string: kitten.imageUrl)!, completion: {
                         success, data in
                         if success {
                             let image = data as! UIImage
@@ -42,8 +43,11 @@ class ViewController: UIViewController {
                             print(data)
                         }
                     })
-                    
+                    newView.content = kitten
                     newView.addSubview(imageView)
+                    let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(recognizer:)))
+                    tapGestureRecognizer.delegate = self
+                    newView.gestureRecognizers?.append(tapGestureRecognizer)
                     self.view.addSubview(newView)
                 }
             }
@@ -52,6 +56,16 @@ class ViewController: UIViewController {
             print("images reloaded")
         }, persistence: PersistenceManager.sharedInstance)
 
+
+    }
+    
+    func handleTap(recognizer: UIGestureRecognizer) {
+        let tappedView = recognizer.view as! DraggableView
+        if let info = tappedView.content.info {
+            let alert = UIAlertController(title: "Alert", message: "Description: \(info.descriptionText)\n\nTimestamp: \(info.timestamp)", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
 
     }
     
