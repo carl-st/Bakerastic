@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContentViewController: UIViewController, UIGestureRecognizerDelegate  {
+class ContentViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var kittenView: UIView!
     var viewModel: ContentViewModel?
@@ -17,54 +17,56 @@ class ContentViewController: UIViewController, UIGestureRecognizerDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.kittenView.backgroundColor = Colors.primaryColor
-        
-        ContentServices.sharedInstance.getContent(completion: {_, _ -> Void in})
-        
+
+        ContentServices.sharedInstance.getContent(completion: { _, _ -> Void in })
+
         self.viewModel = ContentViewModel(reload: { () -> Void in
             let halfSizeOfView = 25.0
             let insetSize = self.kittenView.bounds.insetBy(dx: CGFloat(Int(2 * halfSizeOfView)), dy: CGFloat(Int(2 * halfSizeOfView))).size
 
             if let viewModel = self.viewModel {
 
-                for kitten in (viewModel.content.first?.images)! {
-                    let pointX = CGFloat(UInt(arc4random() %
-                            UInt32(UInt(insetSize.width))))
-                    let pointY = CGFloat(UInt(arc4random() %
-                            UInt32(UInt(insetSize.height))))
-                    
-                    let newView = DraggableView(frame: CGRect(x: pointX, y: pointY, width: self.kittenViewSize, height: self.kittenViewSize))
-                    
-                    let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.kittenViewSize, height: self.kittenViewSize))
-                    imageView.alpha = 0.0
-                    
-                    ContentServices.sharedInstance.getImage(url: URL(string: kitten.imageUrl)!, completion: {
-                        success, data in
-                        if success {
-                            let image = data as! UIImage
-                            imageView.image = self.maskImage(image: image, withMask: #imageLiteral(resourceName: "Star"))
-                            imageView.layer.shadowColor = UIColor.black.cgColor
-                            imageView.layer.shadowOpacity = 1
-                            imageView.layer.shadowOffset = CGSize.zero
-                            imageView.layer.shadowRadius = 7
-                            
-                            UIView.animate(withDuration: 1.0, animations: {
-                                imageView.alpha = 1.0
-                            })
-                        } else {
-                            print(data)
-                        }
-                    })
-                    newView.content = kitten
-                    newView.addSubview(imageView)
-                    let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(recognizer:)))
-                    tapGestureRecognizer.delegate = self
-                    newView.gestureRecognizers?.append(tapGestureRecognizer)
-                    self.kittenView.addSubview(newView)
+                if let images = viewModel.content.first?.images {
+                    for kitten in images {
+                        let pointX = CGFloat(UInt(arc4random() %
+                                UInt32(UInt(insetSize.width))))
+                        let pointY = CGFloat(UInt(arc4random() %
+                                UInt32(UInt(insetSize.height))))
+
+                        let newView = DraggableView(frame: CGRect(x: pointX, y: pointY, width: self.kittenViewSize, height: self.kittenViewSize))
+
+                        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.kittenViewSize, height: self.kittenViewSize))
+                        imageView.alpha = 0.0
+
+                        ContentServices.sharedInstance.getImage(url: URL(string: kitten.imageUrl)!, completion: {
+                            success, data in
+                            if success {
+                                let image = data as! UIImage
+                                imageView.image = self.maskImage(image: image, withMask: #imageLiteral(resourceName:"Star"))
+                                imageView.layer.shadowColor = UIColor.black.cgColor
+                                imageView.layer.shadowOpacity = 1
+                                imageView.layer.shadowOffset = CGSize.zero
+                                imageView.layer.shadowRadius = 7
+
+                                UIView.animate(withDuration: 1.0, animations: {
+                                    imageView.alpha = 1.0
+                                })
+                            } else {
+                                print(data)
+                            }
+                        })
+                        newView.content = kitten
+                        newView.addSubview(imageView)
+                        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(recognizer:)))
+                        tapGestureRecognizer.delegate = self
+                        newView.gestureRecognizers?.append(tapGestureRecognizer)
+                        self.kittenView.addSubview(newView)
+                    }
                 }
             }
         }, persistence: PersistenceManager.sharedInstance)
     }
-    
+
     func handleTap(recognizer: UIGestureRecognizer) {
         let tappedView = recognizer.view as! DraggableView
         if let info = tappedView.content.info {
@@ -73,26 +75,26 @@ class ContentViewController: UIViewController, UIGestureRecognizerDelegate  {
             self.present(alert, animated: true, completion: nil)
         }
     }
-    
+
     func maskImage(image: UIImage, withMask maskImage: UIImage) -> UIImage {
-        
+
         let maskRef = maskImage.cgImage
-        
+
         let mask = CGImage(
-            maskWidth: maskRef!.width,
-            height: maskRef!.height,
-            bitsPerComponent: maskRef!.bitsPerComponent,
-            bitsPerPixel: maskRef!.bitsPerPixel,
-            bytesPerRow: maskRef!.bytesPerRow,
-            provider: maskRef!.dataProvider!,
-            decode: nil,
-            shouldInterpolate: false)
-        
+                maskWidth: maskRef!.width,
+                height: maskRef!.height,
+                bitsPerComponent: maskRef!.bitsPerComponent,
+                bitsPerPixel: maskRef!.bitsPerPixel,
+                bytesPerRow: maskRef!.bytesPerRow,
+                provider: maskRef!.dataProvider!,
+                decode: nil,
+                shouldInterpolate: false)
+
         let masked = image.cgImage!.masking(mask!)
         let maskedImage = UIImage(cgImage: masked!)
-        
+
         return maskedImage
-        
+
     }
 
 

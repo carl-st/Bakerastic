@@ -32,27 +32,27 @@ class PersistenceManager {
 
         debugPrint("Realm file path: \(Realm.Configuration.defaultConfiguration.fileURL)")
     }
-    
-    func createOrUpdate<T: Object>(_ object: T) {
+
+    func createOrUpdate<T:Object>(_ object: T) {
         createOrUpdate(object, realm: realm)
     }
-    
-    func createOrUpdate<T: Object>(_ array: [T]) {
+
+    func createOrUpdate<T:Object>(_ array: [T]) {
         createOrUpdate(array, realm: realm)
     }
-    
-    func createOrUpdate<T: Object>(_ object: T, realm: Realm) {
+
+    func createOrUpdate<T:Object>(_ object: T, realm: Realm) {
         try! realm.write {
             realm.add(object, update: true)
         }
     }
-    
-    func createOrUpdate<T: Object>(_ array: [T], realm: Realm) {
+
+    func createOrUpdate<T:Object>(_ array: [T], realm: Realm) {
         try! realm.write {
             realm.add(array, update: true)
         }
     }
-    
+
     func getContent() -> Results<RemoteContent> {
         return realm.objects(RemoteContent.self)
     }

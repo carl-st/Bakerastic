@@ -11,9 +11,6 @@ target 'Bakerastic' do
   pod 'AlamofireImage', '~> 3.1'
   pod 'AlamofireNetworkActivityIndicator', '~> 2.0'
   pod 'AlamofireObjectMapper', '~> 4.0'
-  pod 'TPKeyboardAvoiding', '~> 1.3'
-  pod 'SIAlertView'
-  pod 'NVActivityIndicatorView'
 
   target 'BakerasticTests' do
     inherit! :search_paths
