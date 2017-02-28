@@ -13,6 +13,7 @@ class ContentViewModel {
     var persistenceManager: PersistenceManager
     var reload: (() -> Void)?
     var content: Results<RemoteContent>
+    var starViews: [DraggableView] = []
     
     init(reload: (() -> Void)? = nil, persistence: PersistenceManager = PersistenceManager.sharedInstance) {
         self.reload = reload
@@ -31,10 +32,12 @@ class ContentViewModel {
                 break
             case .update(_, _, _, _):
                 self?.content = persistence.getContent()
+
                 reload()
                 break
             case .error(let error):
                 fatalError("\(error)")
+                
                 break
             }
         }

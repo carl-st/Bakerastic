@@ -24,7 +24,7 @@ class Kitten: Object, Mappable {
     
     func mapping(map: Map) {
         id <- map["id"]
-        imageUrl <- map["imageUrl"]
+        imageUrl <- map["imageURL"]
         info <- map["info"]
     }
 }
