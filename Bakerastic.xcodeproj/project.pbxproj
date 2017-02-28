@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		106363566FED4F84341A395D /* Pods_BakerasticTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A74E7B84D970F971B2299FF /* Pods_BakerasticTests.framework */; };
+		5A794B41D01F4C8422E78854 /* Pods_Bakerastic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A5ADF53CFA6D6D3A672406 /* Pods_Bakerastic.framework */; };
+		AD70870FEB010E95E6628926 /* Pods_BakerasticUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0436A1C5C336D74E74F90FC /* Pods_BakerasticUITests.framework */; };
+		F983BF7C1E655BBA0032CC3F /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F983BF7B1E655BBA0032CC3F /* ContentViewModel.swift */; };
+		F983BF7F1E65652D0032CC3F /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F983BF7E1E65652D0032CC3F /* DraggableView.swift */; };
+		F9D4D4DB1E64B2AF005D5AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D4DA1E64B2AF005D5AAD /* AppDelegate.swift */; };
+		F9D4D4DD1E64B2AF005D5AAD /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D4DC1E64B2AF005D5AAD /* ContentViewController.swift */; };
+		F9D4D4E01E64B2AF005D5AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D4D4DE1E64B2AF005D5AAD /* Main.storyboard */; };
+		F9D4D4E21E64B2AF005D5AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D4D4E11E64B2AF005D5AAD /* Assets.xcassets */; };
+		F9D4D4E51E64B2AF005D5AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D4D4E31E64B2AF005D5AAD /* LaunchScreen.storyboard */; };
+		F9D4D4F01E64B2AF005D5AAD /* BakerasticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D4EF1E64B2AF005D5AAD /* BakerasticTests.swift */; };
+		F9D4D4FB1E64B2AF005D5AAD /* BakerasticUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D4FA1E64B2AF005D5AAD /* BakerasticUITests.swift */; };
+		F9D4D5131E64B957005D5AAD /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5121E64B957005D5AAD /* GlobalConstants.swift */; };
+		F9D4D5191E64BFEA005D5AAD /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5181E64BFEA005D5AAD /* PersistenceManager.swift */; };
+		F9D4D51B1E64C24D005D5AAD /* Kitten.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D51A1E64C24D005D5AAD /* Kitten.swift */; };
+		F9D4D51D1E64C287005D5AAD /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D51C1E64C287005D5AAD /* ImageInfo.swift */; };
+		F9D4D51F1E64C379005D5AAD /* RemoteContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D51E1E64C379005D5AAD /* RemoteContent.swift */; };
+		F9D4D5211E64C48D005D5AAD /* ListTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5201E64C48D005D5AAD /* ListTransform.swift */; };
+		F9D4D5231E64CC4E005D5AAD /* DateFormatter+Bakerastic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5221E64CC4E005D5AAD /* DateFormatter+Bakerastic.swift */; };
+		F9D4D5251E64CE0C005D5AAD /* NSDate+Bakerastic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5241E64CE0C005D5AAD /* NSDate+Bakerastic.swift */; };
+		F9D4D5271E64D080005D5AAD /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5261E64D080005D5AAD /* UIConstants.swift */; };
+		F9D4D5291E64D097005D5AAD /* UIColor+Bakerastic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D5281E64D097005D5AAD /* UIColor+Bakerastic.swift */; };
+		F9D4D52C1E64D2FD005D5AAD /* ContentServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D52B1E64D2FD005D5AAD /* ContentServices.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9D4D4EC1E64B2AF005D5AAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9D4D4CF1E64B2AF005D5AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9D4D4D61E64B2AF005D5AAD;
+			remoteInfo = Bakerastic;
+		};
+		F9D4D4F71E64B2AF005D5AAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9D4D4CF1E64B2AF005D5AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9D4D4D61E64B2AF005D5AAD;
+			remoteInfo = Bakerastic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A93991AF641774CAF37FA9F /* Pods-Bakerastic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bakerastic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bakerastic/Pods-Bakerastic.release.xcconfig"; sourceTree = "<group>"; };
+		1A74E7B84D970F971B2299FF /* Pods_BakerasticTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BakerasticTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F6AB4E1979EFCA0B544F0EE /* Pods-BakerasticTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BakerasticTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BakerasticTests/Pods-BakerasticTests.release.xcconfig"; sourceTree = "<group>"; };
+		44EB47F1C581A6F5255F99C3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		781A78FEA13746AF76B27F34 /* Pods-BakerasticUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BakerasticUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BakerasticUITests/Pods-BakerasticUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		98A5ADF53CFA6D6D3A672406 /* Pods_Bakerastic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bakerastic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA14E6A19ECD52690A34F6D2 /* Pods-BakerasticUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BakerasticUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BakerasticUITests/Pods-BakerasticUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BFD5230A5B3C0C1B4B14F280 /* Pods-BakerasticTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BakerasticTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BakerasticTests/Pods-BakerasticTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF07535F892AE8A40EA153C3 /* Pods-Bakerastic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bakerastic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bakerastic/Pods-Bakerastic.debug.xcconfig"; sourceTree = "<group>"; };
+		E0436A1C5C336D74E74F90FC /* Pods_BakerasticUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BakerasticUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F983BF7B1E655BBA0032CC3F /* ContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentViewModel.swift; path = ViewModels/ContentViewModel.swift; sourceTree = "<group>"; };
+		F983BF7E1E65652D0032CC3F /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DraggableView.swift; path = Views/DraggableView.swift; sourceTree = "<group>"; };
+		F9D4D4D71E64B2AF005D5AAD /* Bakerastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bakerastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D4D4DA1E64B2AF005D5AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9D4D4DC1E64B2AF005D5AAD /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		F9D4D4DF1E64B2AF005D5AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9D4D4E11E64B2AF005D5AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9D4D4E41E64B2AF005D5AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9D4D4E61E64B2AF005D5AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9D4D4EB1E64B2AF005D5AAD /* BakerasticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BakerasticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D4D4EF1E64B2AF005D5AAD /* BakerasticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakerasticTests.swift; sourceTree = "<group>"; };
+		F9D4D4F11E64B2AF005D5AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9D4D4F61E64B2AF005D5AAD /* BakerasticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BakerasticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D4D4FA1E64B2AF005D5AAD /* BakerasticUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakerasticUITests.swift; sourceTree = "<group>"; };
+		F9D4D4FC1E64B2AF005D5AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9D4D5121E64B957005D5AAD /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalConstants.swift; path = Other/GlobalConstants.swift; sourceTree = "<group>"; };
+		F9D4D5181E64BFEA005D5AAD /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersistenceManager.swift; path = Managers/PersistenceManager.swift; sourceTree = "<group>"; };
+		F9D4D51A1E64C24D005D5AAD /* Kitten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Kitten.swift; path = Model/Kitten.swift; sourceTree = "<group>"; };
+		F9D4D51C1E64C287005D5AAD /* ImageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageInfo.swift; path = Model/ImageInfo.swift; sourceTree = "<group>"; };
+		F9D4D51E1E64C379005D5AAD /* RemoteContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RemoteContent.swift; path = Model/RemoteContent.swift; sourceTree = "<group>"; };
+		F9D4D5201E64C48D005D5AAD /* ListTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTransform.swift; path = Other/ListTransform.swift; sourceTree = "<group>"; };
+		F9D4D5221E64CC4E005D5AAD /* DateFormatter+Bakerastic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateFormatter+Bakerastic.swift"; path = "Other/DateFormatter+Bakerastic.swift"; sourceTree = "<group>"; };
+		F9D4D5241E64CE0C005D5AAD /* NSDate+Bakerastic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+Bakerastic.swift"; path = "Other/NSDate+Bakerastic.swift"; sourceTree = "<group>"; };
+		F9D4D5261E64D080005D5AAD /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		F9D4D5281E64D097005D5AAD /* UIColor+Bakerastic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Bakerastic.swift"; path = "Other/UIColor+Bakerastic.swift"; sourceTree = "<group>"; };
+		F9D4D52B1E64D2FD005D5AAD /* ContentServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentServices.swift; path = Services/ContentServices.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9D4D4D41E64B2AF005D5AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A794B41D01F4C8422E78854 /* Pods_Bakerastic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D4D4E81E64B2AF005D5AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106363566FED4F84341A395D /* Pods_BakerasticTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D4D4F31E64B2AF005D5AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD70870FEB010E95E6628926 /* Pods_BakerasticUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63993050A96A0871BD89136A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98A5ADF53CFA6D6D3A672406 /* Pods_Bakerastic.framework */,
+				1A74E7B84D970F971B2299FF /* Pods_BakerasticTests.framework */,
+				E0436A1C5C336D74E74F90FC /* Pods_BakerasticUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFE5752856A56C60E94A6BAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF07535F892AE8A40EA153C3 /* Pods-Bakerastic.debug.xcconfig */,
+				0A93991AF641774CAF37FA9F /* Pods-Bakerastic.release.xcconfig */,
+				BFD5230A5B3C0C1B4B14F280 /* Pods-BakerasticTests.debug.xcconfig */,
+				2F6AB4E1979EFCA0B544F0EE /* Pods-BakerasticTests.release.xcconfig */,
+				781A78FEA13746AF76B27F34 /* Pods-BakerasticUITests.debug.xcconfig */,
+				BA14E6A19ECD52690A34F6D2 /* Pods-BakerasticUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F983BF7D1E6564E00032CC3F /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				F9D4D4DC1E64B2AF005D5AAD /* ContentViewController.swift */,
+			);
+			name = Content;
+			sourceTree = "<group>";
+		};
+		F9D4D4CE1E64B2AF005D5AAD = {
+			isa = PBXGroup;
+			children = (
+				F9D4D4D91E64B2AF005D5AAD /* Bakerastic */,
+				F9D4D4EE1E64B2AF005D5AAD /* BakerasticTests */,
+				F9D4D4F91E64B2AF005D5AAD /* BakerasticUITests */,
+				F9D4D4D81E64B2AF005D5AAD /* Products */,
+				CFE5752856A56C60E94A6BAD /* Pods */,
+				63993050A96A0871BD89136A /* Frameworks */,
+				44EB47F1C581A6F5255F99C3 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		F9D4D4D81E64B2AF005D5AAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9D4D4D71E64B2AF005D5AAD /* Bakerastic.app */,
+				F9D4D4EB1E64B2AF005D5AAD /* BakerasticTests.xctest */,
+				F9D4D4F61E64B2AF005D5AAD /* BakerasticUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9D4D4D91E64B2AF005D5AAD /* Bakerastic */ = {
+			isa = PBXGroup;
+			children = (
+				F9D4D4DA1E64B2AF005D5AAD /* AppDelegate.swift */,
+				F9D4D50C1E64B725005D5AAD /* Assets */,
+				F9D4D50B1E64B71E005D5AAD /* Managers */,
+				F9D4D50A1E64B705005D5AAD /* Model */,
+				F9D4D5091E64B6FD005D5AAD /* ViewModels */,
+				F9D4D52A1E64D292005D5AAD /* Services */,
+				F9D4D5081E64B6F1005D5AAD /* ViewControllers */,
+				F9D4D50D1E64B72E005D5AAD /* Storyboards / XIBs */,
+				F9D4D50E1E64B750005D5AAD /* Other */,
+				F9D4D4E61E64B2AF005D5AAD /* Info.plist */,
+			);
+			path = Bakerastic;
+			sourceTree = "<group>";
+		};
+		F9D4D4EE1E64B2AF005D5AAD /* BakerasticTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9D4D4EF1E64B2AF005D5AAD /* BakerasticTests.swift */,
+				F9D4D4F11E64B2AF005D5AAD /* Info.plist */,
+			);
+			path = BakerasticTests;
+			sourceTree = "<group>";
+		};
+		F9D4D4F91E64B2AF005D5AAD /* BakerasticUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9D4D4FA1E64B2AF005D5AAD /* BakerasticUITests.swift */,
+				F9D4D4FC1E64B2AF005D5AAD /* Info.plist */,
+			);
+			path = BakerasticUITests;
+			sourceTree = "<group>";
+		};
+		F9D4D5081E64B6F1005D5AAD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F983BF7D1E6564E00032CC3F /* Content */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F9D4D5091E64B6FD005D5AAD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F983BF7B1E655BBA0032CC3F /* ContentViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		F9D4D50A1E64B705005D5AAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9D4D51A1E64C24D005D5AAD /* Kitten.swift */,
+				F9D4D51C1E64C287005D5AAD /* ImageInfo.swift */,
+				F9D4D51E1E64C379005D5AAD /* RemoteContent.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F9D4D50B1E64B71E005D5AAD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F9D4D5181E64BFEA005D5AAD /* PersistenceManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		F9D4D50C1E64B725005D5AAD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F9D4D4E11E64B2AF005D5AAD /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		F9D4D50D1E64B72E005D5AAD /* Storyboards / XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				F9D4D4DE1E64B2AF005D5AAD /* Main.storyboard */,
+				F9D4D4E31E64B2AF005D5AAD /* LaunchScreen.storyboard */,
+			);
+			name = "Storyboards / XIBs";
+			sourceTree = "<group>";
+		};
+		F9D4D50E1E64B750005D5AAD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F9D4D50F1E64B8CC005D5AAD /* Extensions */,
+				F9D4D5121E64B957005D5AAD /* GlobalConstants.swift */,
+				F9D4D5261E64D080005D5AAD /* UIConstants.swift */,
+				F9D4D5201E64C48D005D5AAD /* ListTransform.swift */,
+				F983BF7E1E65652D0032CC3F /* DraggableView.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		F9D4D50F1E64B8CC005D5AAD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F9D4D5281E64D097005D5AAD /* UIColor+Bakerastic.swift */,
+				F9D4D5221E64CC4E005D5AAD /* DateFormatter+Bakerastic.swift */,
+				F9D4D5241E64CE0C005D5AAD /* NSDate+Bakerastic.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F9D4D52A1E64D292005D5AAD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F9D4D52B1E64D2FD005D5AAD /* ContentServices.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9D4D4D61E64B2AF005D5AAD /* Bakerastic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9D4D4FF1E64B2AF005D5AAD /* Build configuration list for PBXNativeTarget "Bakerastic" */;
+			buildPhases = (
+				E784F636EA2C6805A4FFCDAD /* 📦 Check Pods Manifest.lock */,
+				F9D4D4D31E64B2AF005D5AAD /* Sources */,
+				F9D4D4D41E64B2AF005D5AAD /* Frameworks */,
+				F9D4D4D51E64B2AF005D5AAD /* Resources */,
+				94C55B4A7893107614E2AB13 /* 📦 Embed Pods Frameworks */,
+				D5FE2781E530F10D808A0D52 /* 📦 Copy Pods Resources */,
+				F9D4D5171E64BD9E005D5AAD /* Generate Storyboard Constants */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bakerastic;
+			productName = Bakerastic;
+			productReference = F9D4D4D71E64B2AF005D5AAD /* Bakerastic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9D4D4EA1E64B2AF005D5AAD /* BakerasticTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9D4D5021E64B2AF005D5AAD /* Build configuration list for PBXNativeTarget "BakerasticTests" */;
+			buildPhases = (
+				5454C9A480E63E05391529E1 /* 📦 Check Pods Manifest.lock */,
+				F9D4D4E71E64B2AF005D5AAD /* Sources */,
+				F9D4D4E81E64B2AF005D5AAD /* Frameworks */,
+				F9D4D4E91E64B2AF005D5AAD /* Resources */,
+				1A31A2798346F1B083D3DB2D /* 📦 Embed Pods Frameworks */,
+				5B3112F4F6E6C3ACDA805D29 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9D4D4ED1E64B2AF005D5AAD /* PBXTargetDependency */,
+			);
+			name = BakerasticTests;
+			productName = BakerasticTests;
+			productReference = F9D4D4EB1E64B2AF005D5AAD /* BakerasticTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9D4D4F51E64B2AF005D5AAD /* BakerasticUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9D4D5051E64B2AF005D5AAD /* Build configuration list for PBXNativeTarget "BakerasticUITests" */;
+			buildPhases = (
+				880E53987A7938637762AB07 /* 📦 Check Pods Manifest.lock */,
+				F9D4D4F21E64B2AF005D5AAD /* Sources */,
+				F9D4D4F31E64B2AF005D5AAD /* Frameworks */,
+				F9D4D4F41E64B2AF005D5AAD /* Resources */,
+				5A658B0E9AE9EFCF8A74BCBE /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9D4D4F81E64B2AF005D5AAD /* PBXTargetDependency */,
+			);
+			name = BakerasticUITests;
+			productName = BakerasticUITests;
+			productReference = F9D4D4F61E64B2AF005D5AAD /* BakerasticUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9D4D4CF1E64B2AF005D5AAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = carlst;
+				TargetAttributes = {
+					F9D4D4D61E64B2AF005D5AAD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K93H863522;
+						ProvisioningStyle = Automatic;
+					};
+					F9D4D4EA1E64B2AF005D5AAD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K93H863522;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F9D4D4D61E64B2AF005D5AAD;
+					};
+					F9D4D4F51E64B2AF005D5AAD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K93H863522;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F9D4D4D61E64B2AF005D5AAD;
+					};
+				};
+			};
+			buildConfigurationList = F9D4D4D21E64B2AF005D5AAD /* Build configuration list for PBXProject "Bakerastic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9D4D4CE1E64B2AF005D5AAD;
+			productRefGroup = F9D4D4D81E64B2AF005D5AAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9D4D4D61E64B2AF005D5AAD /* Bakerastic */,
+				F9D4D4EA1E64B2AF005D5AAD /* BakerasticTests */,
+				F9D4D4F51E64B2AF005D5AAD /* BakerasticUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9D4D4D51E64B2AF005D5AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D4D4E51E64B2AF005D5AAD /* LaunchScreen.storyboard in Resources */,
+				F9D4D4E21E64B2AF005D5AAD /* Assets.xcassets in Resources */,
+				F9D4D4E01E64B2AF005D5AAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D4D4E91E64B2AF005D5AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D4D4F41E64B2AF005D5AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A31A2798346F1B083D3DB2D /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BakerasticTests/Pods-BakerasticTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5454C9A480E63E05391529E1 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5A658B0E9AE9EFCF8A74BCBE /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BakerasticUITests/Pods-BakerasticUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B3112F4F6E6C3ACDA805D29 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BakerasticTests/Pods-BakerasticTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		880E53987A7938637762AB07 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		94C55B4A7893107614E2AB13 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bakerastic/Pods-Bakerastic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5FE2781E530F10D808A0D52 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bakerastic/Pods-Bakerastic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E784F636EA2C6805A4FFCDAD /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9D4D5171E64BD9E005D5AAD /* Generate Storyboard Constants */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Storyboard Constants";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo $(bash -l -c  \"source ~/.bash_profile && cd Bakerastic && bundle exec sbconstants -w UIConstants.swift\")";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9D4D4D31E64B2AF005D5AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D4D5291E64D097005D5AAD /* UIColor+Bakerastic.swift in Sources */,
+				F9D4D5231E64CC4E005D5AAD /* DateFormatter+Bakerastic.swift in Sources */,
+				F9D4D5251E64CE0C005D5AAD /* NSDate+Bakerastic.swift in Sources */,
+				F9D4D4DD1E64B2AF005D5AAD /* ContentViewController.swift in Sources */,
+				F9D4D51D1E64C287005D5AAD /* ImageInfo.swift in Sources */,
+				F9D4D4DB1E64B2AF005D5AAD /* AppDelegate.swift in Sources */,
+				F983BF7F1E65652D0032CC3F /* DraggableView.swift in Sources */,
+				F9D4D5131E64B957005D5AAD /* GlobalConstants.swift in Sources */,
+				F9D4D5191E64BFEA005D5AAD /* PersistenceManager.swift in Sources */,
+				F9D4D51B1E64C24D005D5AAD /* Kitten.swift in Sources */,
+				F9D4D51F1E64C379005D5AAD /* RemoteContent.swift in Sources */,
+				F983BF7C1E655BBA0032CC3F /* ContentViewModel.swift in Sources */,
+				F9D4D52C1E64D2FD005D5AAD /* ContentServices.swift in Sources */,
+				F9D4D5211E64C48D005D5AAD /* ListTransform.swift in Sources */,
+				F9D4D5271E64D080005D5AAD /* UIConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D4D4E71E64B2AF005D5AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D4D4F01E64B2AF005D5AAD /* BakerasticTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D4D4F21E64B2AF005D5AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D4D4FB1E64B2AF005D5AAD /* BakerasticUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9D4D4ED1E64B2AF005D5AAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9D4D4D61E64B2AF005D5AAD /* Bakerastic */;
+			targetProxy = F9D4D4EC1E64B2AF005D5AAD /* PBXContainerItemProxy */;
+		};
+		F9D4D4F81E64B2AF005D5AAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9D4D4D61E64B2AF005D5AAD /* Bakerastic */;
+			targetProxy = F9D4D4F71E64B2AF005D5AAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9D4D4DE1E64B2AF005D5AAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9D4D4DF1E64B2AF005D5AAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9D4D4E31E64B2AF005D5AAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9D4D4E41E64B2AF005D5AAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9D4D4FD1E64B2AF005D5AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9D4D4FE1E64B2AF005D5AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9D4D5001E64B2AF005D5AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF07535F892AE8A40EA153C3 /* Pods-Bakerastic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = Bakerastic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.Bakerastic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F9D4D5011E64B2AF005D5AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A93991AF641774CAF37FA9F /* Pods-Bakerastic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = Bakerastic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.Bakerastic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F9D4D5031E64B2AF005D5AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD5230A5B3C0C1B4B14F280 /* Pods-BakerasticTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = BakerasticTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.BakerasticTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bakerastic.app/Bakerastic";
+			};
+			name = Debug;
+		};
+		F9D4D5041E64B2AF005D5AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F6AB4E1979EFCA0B544F0EE /* Pods-BakerasticTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = BakerasticTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.BakerasticTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bakerastic.app/Bakerastic";
+			};
+			name = Release;
+		};
+		F9D4D5061E64B2AF005D5AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 781A78FEA13746AF76B27F34 /* Pods-BakerasticUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = BakerasticUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.BakerasticUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Bakerastic;
+			};
+			name = Debug;
+		};
+		F9D4D5071E64B2AF005D5AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA14E6A19ECD52690A34F6D2 /* Pods-BakerasticUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = BakerasticUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.BakerasticUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Bakerastic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9D4D4D21E64B2AF005D5AAD /* Build configuration list for PBXProject "Bakerastic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9D4D4FD1E64B2AF005D5AAD /* Debug */,
+				F9D4D4FE1E64B2AF005D5AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9D4D4FF1E64B2AF005D5AAD /* Build configuration list for PBXNativeTarget "Bakerastic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9D4D5001E64B2AF005D5AAD /* Debug */,
+				F9D4D5011E64B2AF005D5AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9D4D5021E64B2AF005D5AAD /* Build configuration list for PBXNativeTarget "BakerasticTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9D4D5031E64B2AF005D5AAD /* Debug */,
+				F9D4D5041E64B2AF005D5AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9D4D5051E64B2AF005D5AAD /* Build configuration list for PBXNativeTarget "BakerasticUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9D4D5061E64B2AF005D5AAD /* Debug */,
+				F9D4D5071E64B2AF005D5AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9D4D4CF1E64B2AF005D5AAD /* Project object */;
+}
