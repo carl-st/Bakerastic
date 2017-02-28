@@ -10,6 +10,7 @@
 		106363566FED4F84341A395D /* Pods_BakerasticTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A74E7B84D970F971B2299FF /* Pods_BakerasticTests.framework */; };
 		5A794B41D01F4C8422E78854 /* Pods_Bakerastic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A5ADF53CFA6D6D3A672406 /* Pods_Bakerastic.framework */; };
 		AD70870FEB010E95E6628926 /* Pods_BakerasticUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0436A1C5C336D74E74F90FC /* Pods_BakerasticUITests.framework */; };
+		F983BF7C1E655BBA0032CC3F /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F983BF7B1E655BBA0032CC3F /* ContentViewModel.swift */; };
 		F9D4D4DB1E64B2AF005D5AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D4DA1E64B2AF005D5AAD /* AppDelegate.swift */; };
 		F9D4D4DD1E64B2AF005D5AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4D4DC1E64B2AF005D5AAD /* ViewController.swift */; };
 		F9D4D4E01E64B2AF005D5AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D4D4DE1E64B2AF005D5AAD /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		BFD5230A5B3C0C1B4B14F280 /* Pods-BakerasticTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BakerasticTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BakerasticTests/Pods-BakerasticTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF07535F892AE8A40EA153C3 /* Pods-Bakerastic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bakerastic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bakerastic/Pods-Bakerastic.debug.xcconfig"; sourceTree = "<group>"; };
 		E0436A1C5C336D74E74F90FC /* Pods_BakerasticUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BakerasticUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F983BF7B1E655BBA0032CC3F /* ContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentViewModel.swift; path = ViewModels/ContentViewModel.swift; sourceTree = "<group>"; };
 		F9D4D4D71E64B2AF005D5AAD /* Bakerastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bakerastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D4D4DA1E64B2AF005D5AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9D4D4DC1E64B2AF005D5AAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 		F9D4D5091E64B6FD005D5AAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F983BF7B1E655BBA0032CC3F /* ContentViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				F9D4D5191E64BFEA005D5AAD /* PersistenceManager.swift in Sources */,
 				F9D4D51B1E64C24D005D5AAD /* Kitten.swift in Sources */,
 				F9D4D51F1E64C379005D5AAD /* RemoteContent.swift in Sources */,
+				F983BF7C1E655BBA0032CC3F /* ContentViewModel.swift in Sources */,
 				F9D4D52C1E64D2FD005D5AAD /* ContentServices.swift in Sources */,
 				F9D4D5211E64C48D005D5AAD /* ListTransform.swift in Sources */,
 				F9D4D5271E64D080005D5AAD /* UIConstants.swift in Sources */,

@@ -53,7 +53,9 @@ class PersistenceManager {
         }
     }
     
-    
+    func getContent() -> Results<RemoteContent> {
+        return realm.objects(RemoteContent.self)
+    }
 
 }
 
