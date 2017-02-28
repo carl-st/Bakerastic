@@ -7,6 +7,7 @@
 //
 
 import Alamofire
+import AlamofireImage
 import RealmSwift
 import AlamofireObjectMapper
 
@@ -19,7 +20,7 @@ class ContentServices {
         case Test = "u/16049878/images/test.json"
     }
     
-    func getCalendar(completion: @escaping (Bool, Any) -> Void) {
+    func getContent(completion: @escaping (Bool, Any) -> Void) {
         Alamofire.request(Urls.baseUrl + Path.Test.rawValue).validate()
             .responseObject(completionHandler: {
                 (response: DataResponse<RemoteContent>) in
@@ -35,4 +36,19 @@ class ContentServices {
             })
     }
     
+    func getImage(url: URL, completion: @escaping (Bool, Any) -> Void) {
+        Alamofire.request(url)
+            .responseImage { response in
+            switch response.result {
+            case .success(let image):
+                completion(true, image)
+            case .failure(let error):
+                print(error)
+                completion(false, error)
+            }
+            debugPrint(response)
+            debugPrint(response.result)
+
+        }
+    }
 }
