@@ -1,5 +1,12 @@
 # Bakerastic iOS
-==========================
+This small app was made for purposes of recruitment process. 
+It had to meet the following requirements:
+
+1) The JSON file at given url contains a list of images, present those images in a view, 
+2) The view’s background color should be #FB8C00 
+3) The images should be masked using the attached “star” image 
+4) Tapping the image presents an alert that will display the image’s timestamp and description.
+5) The user should be able to drag the images around the view.
 
 ## Initial Setup ##
 
